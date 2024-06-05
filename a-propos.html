@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+ 
+   
+    <link rel="stylesheet" href="css/styleApropos.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>À propos de ce site</h1>
+      
+    </header>
+    <main>
+        <section>
+           
+            <p>Ce site a été créé pour partager et promouvoir la riche culture des Amazighs. Les Amazighs, ou Berbères, ont une histoire et une culture fascinantes qui méritent d'être connues et célébrées.</p>
+            <p>En tant que passionné de la culture amazigh, j'ai voulu créer un espace où les gens peuvent en apprendre davantage sur cette culture unique, ses traditions, ses arts et ses coutumes. J'espère que vous trouverez ce site informatif et inspirant.</p>
+			<img src="drapeau-amazigh.jpg" alt="drapeau des Amazighs" class="responsive-image">
+        </section>
+    </main>
+    
+</body>
+<head>
+    <title>Partagez votre expérience Amazighe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 2px 2px 12px #aaa;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Partagez votre héritage</h1>
+<form action="submit_experience.php" method="post">
+    <label for="name">Nom :</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email :</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="type">Type de partage :</label>
+    <select id="type" name="type" required>
+        <option value="recette">Recette Amazighe</option>
+        <option value="architecture">Description d'une Maison Traditionnelle</option>
+    </select>
+
+    <label for="title">Titre :</label>
+    <input type="text" id="title" name="title" required>
+
+    <label for="description">Description :</label>
+    <textarea id="description" name="description" rows="5" required></textarea>
+
+    <button type="submit">Envoyer</button>
+</form>
+
+</body>
+
+ <A href="index.html"><p id="rr">retournez a la page principale</P></A>
+</html>
